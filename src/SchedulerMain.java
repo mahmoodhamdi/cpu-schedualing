@@ -10,7 +10,7 @@ public class SchedulerMain {
         System.out.println("|                                    |");
         System.out.println("| Choose a scheduling algorithm:     |");
         System.out.println("| 1. First Come First Served (FCFS)  |");
-        System.out.println("| 2. Round Robin (RR)                |");
+        System.out.println("| 2. Priority preemptive algorithm   |");
         System.out.println("| 3. Non-Preemptive Shortest Job     |");
         System.out.println("|    First (SJF)                     |");
         System.out.println("| 4. Non-Preemptive Priority         |");
@@ -22,7 +22,9 @@ public class SchedulerMain {
             case 1:
                 Fcfc.executeFCFS(scanner);
                 break;
-
+            // case 2:
+            //     PriorityPreemptive.executePriorityPreemptive(scanner);
+            //     break;
             default:
                 System.out.println("Invalid choice.");
                 break;
